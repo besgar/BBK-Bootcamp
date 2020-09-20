@@ -1,0 +1,182 @@
+body{
+    width:960px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1{
+    color: rgb(83, 83, 83);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+hr{
+    border-top: 1px solid rgb(238, 238, 238);
+    width: 960px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+    width: 60%;
+    height: 50px;
+    background-color: crimson;
+    border-radius: 12px;
+    color: white;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: crimson;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 0px;
+}
+
+#fraseyslide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fraseyslide p{
+    text-align: center;
+    color: rgb(83, 83, 83);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+#slide{
+    width: 960px;
+    height: 350px;
+}
+
+.titulorojo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: crimson;
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.subtitulogris{
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(83, 83, 83);
+}
+
+p{
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(83, 83, 83);
+    line-height: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#serviciosprincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#personasprincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 960px;
+}
+
+.personas{
+    width: 172px;
+}
+
+#trabajosprincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imagentrabajo{
+    width: 300px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(223, 223, 223);
+    margin-top: 30px;
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin: 10px 30px 0px 30px;
+}
+
+#compania{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin: 10px 30px 0px 0px;
+}
+
+#compania p{
+    margin-bottom: 18px;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin: 10px 30px 0px 0px;
+}
+
+.subtitulorojo{
+    color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    align-items: center;
+}
+
+.trabajoprincipal{
+    display: flex;
+    height: 95px;
+    margin-bottom: 30px;
+}
+
+.trabajo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
