@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        let num1String=window.prompt("Escribe un número");
+        let num2String=window.prompt("Escribe otro número");
+        let num3String=window.prompt("Escribe otro número");
+        let num1=parseInt(num1String);
+        let num2=parseInt(num2String);
+        let num3=parseInt(num3String);
+
+        if(num1-num2===20){
+            window.alert("El primer número es 20 menos que el segundo número");
+        }
+        else if(num1-num3===20){
+            window.alert("El primer número es 20 menos que el tercer número");
+        }
+        else if(num2-num3===20){
+            window.alert("El segundo número es 20 menos que el tercer número");
+        }
+        else if(num2-num1===20){
+            window.alert("El segundo número es 20 menos que el primer número");
+        }
+        else if(num3-num1===20){
+            window.alert("El tercer número es 20 menos que el primer número");
+        }
+        else if(num3-num2===20){
+            window.alert("El tercer número es 20 menos que el segundo número");
+        }
+
+    </script>
+    
+</body>
+</html>
