@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+<body>
+    <script>
+        let frase=window.prompt("Escribe una frase");
+        let mitad = frase.length / 2;
+
+        if(frase.length%2===0){
+            let dosCaracteresCentrales=frase.substring(mitad -1,mitad+1);
+            console.log(dosCaracteresCentrales);
+        }
+        else{
+            let caracterCentral=frase.substring(mitad, mitad+1);
+            console.log(caracterCentral);
+        }
+
+
+    </script>
+    
+</body>
+</html>

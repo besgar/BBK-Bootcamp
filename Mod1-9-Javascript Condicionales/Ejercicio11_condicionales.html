@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <script>
+        let numero1String=window.prompt("Escribe un número entero que esté entre el 25 y el 75");
+        let numero2String=window.prompt("Escribe otro número entero que esté entre el 25 y el 75");
+
+        let num1 = parseInt(numero1String);
+        let num2 = parseInt(numero2String);
+
+
+        if(num1>25 && num1<75 && num2>25 && num2<75){
+            let num1String=numero1String.substring(0, 1);
+            let num2String=numero1String.substring(1);
+            let num3String=numero2String.substring(0, 1);
+            let num4String=numero2String.substring(1);
+            if(num1String===num3String || num1String===num4String || num2String===num3String || num2String===num4String){
+            console.log("Hay dos números iguales");
+            }
+            else {
+                console.log("No hay ningún número igual");
+            }
+        }
+
+        else {
+            console.log("Los números que has elegido no se encuentran entre el 25 y el 75");
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

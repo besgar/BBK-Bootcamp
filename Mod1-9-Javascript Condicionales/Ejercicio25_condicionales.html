@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 25</title>
+</head>
+<body>
+    <script>
+        let nombre=window.prompt("Nombre y apellidos");
+        let ventas=parseInt(window.prompt("Ventas (€)"));
+
+        if(ventas<500){
+            console.log(nombre + " " + ventas + "€ ventas");
+        }
+        else{
+            console.log(nombre + " " + ventas +"€ Ventas"+ " "  + ((ventas*0.05)) + "€ Extra");
+        }
+    </script>
+    
+</body>
+</html>

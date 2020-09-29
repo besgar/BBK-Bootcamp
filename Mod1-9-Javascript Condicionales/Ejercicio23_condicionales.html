@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 23</title>
+</head>
+<body>
+    <script>
+    let examen1=parseInt(window.prompt("¿Qué nota has sacado en el primer examen?"));
+    let examen2=parseInt(window.prompt("¿Qué nota has sacado en el segundo examen?"));
+    let examen3=parseInt(window.prompt("¿Qué nota has sacado en el tercer examen?"));
+
+    let suma
+
+    if(examen1>examen2){
+        suma=examen1+examen2;
+    }
+
+    else if(examen2>examen1){
+        suma=examen2+examen3;
+    }
+
+    if(suma<5){
+        console.log(`Has sacado un ${suma}, has suspendido.`);
+    }
+    else if(suma<6){
+        console.log(`Has sacado un ${suma}, has sacado un suficiente.`);
+    }
+    else if(suma<7){
+        console.log(`Has sacado un ${suma}, has sacado un bien.`);
+    }
+    else if(suma<9){
+        console.log(`Has sacado un ${suma}, has sacado un notable.`);
+    }
+    else if(suma<10){
+        console.log(`Has sacado un ${suma}, ¡has sacado un sobresaliente!`);
+    }
+    else if(suma>10){
+        console.log(`Has sacado un ${suma}, ¡tienes matrícula de honor!`);
+    }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

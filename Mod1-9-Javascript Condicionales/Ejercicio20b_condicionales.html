@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20b</title>
+</head>
+<body>
+    <script>
+        let menu1 = window.prompt("Elige uno de estos platos: pasta, pizza o ensalada.");
+        menu1 = menu1.toLowerCase();
+        
+        let menu2;
+
+        switch (menu1){
+            case "pasta":
+                menu2=window.prompt("Elige: carbonara, boloñesa o pesto");
+                menu2=menu2.toLowerCase();
+                if(menu2!=="carbonara" && menu2!=="boloñesa" && menu2!=="pesto"){
+                menu2="Tienes que elegir una de las 3 opciones";
+            }
+            break;
+
+            case "pizza":
+                menu2=window.prompt("Elige: margarita, barbacoa o hawaiana");
+                menu2=menu2.toLowerCase();
+                if(menu2!=="margarita" && menu2!=="barbacoa" && menu2!=="hawaiana"){
+                menu2="Tienes que elegir una de las 3 opciones";
+            }
+            break;
+
+            case "ensalada":
+                menu2=window.prompt("Elige: mixta, césar o campera");
+                menu2=menu2.toLowerCase();
+                if(menu2!=="mixta" && menu2!=="césar" && menu2!=="campera"){
+                menu2="Tienes que elegir una de las 3 opciones";
+            }
+            break;
+
+            default:
+            console.log("Tienes que elegir una de las 3 opciones");
+        }
+        console.log(menu2);
+    
+    </script>
+    
+</body>
+</html>

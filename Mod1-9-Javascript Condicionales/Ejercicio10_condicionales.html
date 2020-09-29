@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        let numero1=parseInt(window.prompt("Escribe un número"));
+        let numero2=parseInt(window.prompt("Escribe otro número"));
+
+        let numero1Resto=numero1%6;
+        let numero2Resto=numero2%6;
+
+        if(numero1===numero2){
+            console.log("0");
+        }
+        else if(numero1Resto===numero2Resto){
+            if(numero1<numero2){
+                console.log(numero1);
+            }
+            else if(numero2<numero1){
+                console.log(numero2)
+            }
+        }
+        else{
+            if(numero1>numero2){
+                console.log(numero1);
+            }
+            else if(numero2>numero1){
+                console.log(numero2)
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

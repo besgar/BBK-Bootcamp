@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 24</title>
+</head>
+
+<body>
+    <script>
+        let numero = parseInt(window.prompt("Escribe un número"));
+        let temperatura = window.prompt("Escribe C (si lo quieres convertir en grados centígrados) o F (si  lo quieres en Fahrenheit)");
+        temperatura = temperatura.toUpperCase();
+
+        if(temperatura==="C"){
+            console.log(((numero-32)/1.800) + "°C");
+        }
+
+        else if(temperatura==="F"){
+            console.log((numero*1.800+32) + "°F");
+        }
+
+    </script>
+</body>
+
+</html>
