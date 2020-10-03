@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <script>
+        let metros=parseInt(window.prompt("¿Cuántos metros hay de tu casa al trabajo?"));
+        let horas=parseInt(window.prompt("¿Cuántas horas tardas de tu casa al trabajo?"));
+        let minutos=parseInt(window.prompt("¿Cuántos minutos tardas de tu casa al trabajo?"));
+        let segundos=parseInt(window.prompt("¿Cuántos segundos tardas de tu casa al trabajo?"));
+
+        let horasSegundos=horas*3600;
+        let minutosSegundos=minutos*60;
+        let resultadoMetroSegundos=metros/(horasSegundos+minutosSegundos+segundos);
+
+        console.log("De mi casa al trabajo voy a " + resultadoMetroSegundos + " m/s");
+        console.log("De mi casa al trabajo voy a " + ((resultadoMetroSegundos/1000)*3600) + " km/h");
+
+
+
+    </script>
+    
+</body>
+</html>
