@@ -1,4 +1,4 @@
-let exactMath = require('exact-math');
+let exactMath = require("exact-math");
 
 console.log("Suma " + exactMath.add(789, 34, 250443));
 console.log("Resta " + exactMath.sub(2059,79));
