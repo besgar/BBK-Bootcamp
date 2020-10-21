@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis favoritos | Haizea Liburutegia</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+<body>
+    <header>
+        <div id="header">
+            <a href="./index.html"><img src="./img/logotipo.png" alt="logotipo"/></a>
+        </div>
+        <nav>
+          <ul id="headerMenu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="https://www.google.es/">QUIÉNES SOMOS</a></li>
+            <li><a class="headerMenuSeleccionado" href="./mis_favoritos.html">MIS FAVORITOS</a></li>
+            <li><a href="./buscador.html">BUSCADOR</a></li>
+            <li><a href="https://www.google.es/">AFILIACIÓN</a></li>
+            <li><a href="https://www.google.es/">CONTACTO</a></li> 
+          </ul>
+        </nav>
+      </header>
+
+
+      <main>
+        <div class="maincabecera">
+          <hr/>
+          <h4>Mis Favoritos</h4>
+          <hr/>
+        </div>
+        <div id="mainMisFavoritos">
+      </div>
+      </main>
+
+
+      <footer>
+        <div id="footer1">
+          <h4>Haizea Liburutegia</h4>
+          <a href="https://www.google.es/">Quiénes somos</a><br />
+          <a class="footerMenuSeleccionado" href="./mis_favoritos.html">Mis favoritos</a><br />
+          <a href="./buscador.html">Buscador</a><br />
+          <a href="https://www.google.es/">Afiliación</a><br />
+          <a href="https://www.google.es/">Contacto</a><br />
+        </div>
+        <div id="footer2">
+          <h4>Condiciones de venta</h4>
+          <a href="https://www.google.es/">Condiciones generales</a><br />
+          <a href="https://www.google.es/">Tarifas y políticas de envío</a><br />
+          <a href="https://www.google.es/">Política de privacidad</a><br />
+          <a href="https://www.google.es/">Preguntas frecuentes</a><br />
+        </div>
+        <div id="footer3">
+          <h4>Contacto</h4>
+          <p>
+            Calle Eduardo Dato, 20<br />
+            01005, Vitoria-Gasteiz (Álava)
+          </p>
+          <p>
+            T.: 945 10 20 30<br />
+            F.: 945 10 20 32<br />
+            <a href="mailto:contact@mydomain.com">hola@haizealiburutegia.com</a>
+          </p>
+          <br />
+        </div>
+        <div id="redesSociales">
+          <div id="iconosRedesSociales">
+              <a href="https://es-es.facebook.com"><img src="./img/icono_facebook.svg" alt="logotipo facebook"/></a>
+              <a href="https://twitter.com"><img src="./img/icono_twitter.svg" alt="logotipo twitter"/></a>
+              <a href="https://www.instagram.com"><img src="./img/icono_instagram.svg" alt="logotipo instagram"/></a>
+              <a href="https://www.youtube.com/"><img src="./img/icono_youtube.svg" alt="logotipo youtube"/></a>
+          </div>
+      </div>
+      </footer>
+
+    <script src="./index.js"></script>
+
+    <script>      
+      window.onload = function () {
+        leerFavoritos();
+      };
+  </script>
+
+    
+</body>
+</html>
