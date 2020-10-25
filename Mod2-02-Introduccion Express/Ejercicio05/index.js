@@ -18,7 +18,7 @@ app.get("/apellidos/:parametro", function(request, response){
 });
 
 app.get("/edad/:parametro", function(request, response){
-    persona.edad=request.params.parametro;
+    persona.edad=parseInt(request.params.parametro);
     response.send(persona);
 });
 
