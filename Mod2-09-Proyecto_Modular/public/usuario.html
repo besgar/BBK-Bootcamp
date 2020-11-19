@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Privada | Ke Aprovexe!!</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header id="header">
+        <div id="headerLogo">
+            <a href="./index.html"><img src="./img/logotipo.png" alt="logotipo"/></a>
+        </div>
+
+        <nav id="headerMenu">
+            <div id="menuHome">
+                <a href="./index.html">HOME</a>
+            </div>
+            <div id="menuConsejos">
+                <a href="https://www.google.es/">CONSEJOS CULINARIOS</a>
+            </div>
+            <div id="menuBuscador">
+                <a href="./buscador.html">BUSCADOR</a>
+            </div>
+            <div id="menuUsuario">
+                <a class="headerMenuSeleccionado" href="./usuario.html">ZONA PRIVADA</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="tituloMain">ZONA PRIVADA</h2>
+
+        <div id="cerrarSesion">
+            <div id="iconoCerrarSesion">
+                <img src="./img/icono_cerrar_sesion.png" alt="icono_cerrar_sesion"/>
+            </div>
+            <div id="textoCerrarSesion">
+                <h4>CERRAR SESIÓN</h4>
+            </div>
+        </div>
+
+        <h3 class="subtitulo">¡Quiero crear una nueva receta!</h3>
+
+        <div id="mainUsuario">
+            <div id="crearReceta">          
+                <div class="crearRecetaInputs">
+                    <input type="text" placeholder="Nombre del plato" id="nombre"/>
+                    <input type="text" placeholder="Título de la película" id="pelicula"/>
+                    <input type="text" placeholder="Enlace al argumento de la película" id="trailer"/>
+                </div>
+                <div class="crearRecetaInputs">
+                    <input type="text" placeholder="Enlace a Youtube" id="enlace"/>
+                    <input type="text" placeholder="Tiempo (horas)" id="tiempo"/>
+                    <input type="text" placeholder="Comensales" id="comensales"/>
+                </div>
+                <div class="crearRecetaInputs">
+                    <select name="dificultad" id="dificultad">
+                        <option value="baja">Dificultad Baja</option>
+                        <option value="media">Dificultad Media</option>
+                        <option value="alta">Dificultad Alta</option>
+                    </select>
+                    <select name="plato" id="plato">
+                        <option value="entrante">Entrante</option>
+                        <option value="primero">Primero</option>
+                        <option value="segundo">Segundo</option>
+                        <option value="postre">Postre</option>
+                    </select>
+                    <input type="text" placeholder="Escrito por..." id="usuario"/>
+                    <button class="boton" onclick="anyadir()">AÑADIR</button>
+                </div>
+                <div>
+                    <img src="./img/vegetales.png" alt="imagen_vegetales"/>
+                </div>  
+            </div>
+        </div>
+        
+        <h3 class="subtitulo">Echa un vistazo a las recetas que has creado</h3>
+
+        <div id="recetasMostrarUsuario"></div>
+
+    </main>
+
+    <footer>
+        <div id="footer1">
+            <div id="menuPie">
+                <a href="./index.html">HOME</a>
+                <a>|</a>
+                <a href="https://www.google.es/">CONSEJOS CULINARIOS</a>
+                <a>|</a>
+                <a href="./buscador.html">BUSCADOR</a>
+                <a>|</a>
+                <a class="headerMenuSeleccionado" href="./usuario.html">ZONA PRIVADA</a>
+            </div>            
+            <p id="parrafoPie">Copyright © 2020. Todos los derechos reservados.</p>
+
+        </div>
+
+        <div id="footer2">
+            <div class="iconosRedesSociales">
+                <img src="./img/redes_sociales_facebook.png" alt="redes_sociales_facebook"/>
+            </div>
+            <div class="iconosRedesSociales">
+                <img src="./img/redes_sociales_twitter.png" alt="redes_sociales_twitter"/>
+            </div>        
+            <div class="iconosRedesSociales">
+                <img src="./img/redes_sociales_youtube.png" alt="redes_sociales_youtube"/>
+            </div>        
+            <div class="iconosRedesSociales">
+                <img src="./img/redes_sociales_instagram.png" alt="redes_sociales_instagram"/>
+            </div>        
+        </div>
+    </footer>
+    
+    <script src="./usuario.js"></script>
+</body>
+</html>
