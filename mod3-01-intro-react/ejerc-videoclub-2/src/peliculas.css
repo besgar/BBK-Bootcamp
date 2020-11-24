@@ -1,0 +1,13 @@
+.cardPelicula{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 250px;
+    margin:40px;
+    border: 1px dotted gray;
+    padding: 20px;
+}
+  
+.cartelPelicula{
+    max-width: 250px;
+}
