@@ -1,0 +1,462 @@
+body{
+    margin: 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.ocultarDiv{
+    visibility: hidden;
+    height: 0;
+}
+
+
+main{
+    padding-bottom: 40px;
+}
+
+/*COMIENZO: Header y menú*/
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("background.jpg");
+    height: 220px;
+}
+
+#headerLogo{
+    margin: 30px;
+}
+
+#headerMenu{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 64%;
+}
+
+#headerMenu a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.headerMenuSeleccionado{
+    text-decoration: overline;
+    text-decoration-color:white;
+}
+
+#menuHome{
+    background-color: rgb(255, 64, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+
+#menuConsejos{
+    background-color: rgb(105, 183, 81);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+
+#menuBuscador{
+    background-color: rgb(255, 211, 77);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+
+#menuUsuario{
+    background-color: rgb(88, 34, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+
+/*FIN: Header y menú*/
+
+
+#fraseHome{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#parrafoHome{
+    align-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(80,80,80);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.tituloMain{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-stretch: ultra-expanded;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(88, 34, 0);
+    background-color:rgb(255, 211, 77);
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.subtitulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(88, 34, 0);
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: 1px solid rgb(255, 64, 0);
+}
+
+.boton{
+    border: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(88, 34, 0);
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+
+/*COMIENZO: Recetas individuales*/
+
+.filaCuatroRecetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 30px 50px 30px;
+}
+
+.recetaIndividual{
+    display: flex;
+    flex-direction: column;   
+    border: solid;    
+    border-width: thin;
+    border-color: silver;   
+    width: 23%;
+}
+
+.recetaIndividualNombre{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: rgb(255, 64, 0);
+    height: 80px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.recetaIndividualPeli{
+    display: flex;
+    align-items: center;
+    background-color: rgb(88, 34, 0);
+    padding: 10px;
+    height: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.recetaIndividualPeli h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 211, 77);
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.videoResponsive{
+    width: 100%;
+}
+
+#recetaTCDMain{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(234, 234, 234);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(80,80,80);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.recetaTCD{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.recetaTCDIcono{
+    padding-right: 6px;
+}
+
+.recetaPlatoUsuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recetaPlato{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(88, 34, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 211, 77);
+}
+
+.recetaUsuario{    
+    display: flex;
+    flex-direction: row; 
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(80,80,80);
+}
+
+.recetaEditarBorrar{
+    display: flex;
+    flex-direction: row; 
+    align-content: flex-end;
+    align-items: center; 
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+.recetaEditarBorrarIcono{
+    padding-right: 10px;
+}
+
+.recetaEditarBorrarIcono button{
+    border: none;
+}
+
+/*FIN: Recetas individuales*/
+
+
+/*COMIENZO: Zona Privada Usuario: Cerrar sesión */
+
+#cerrarSesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#iconoCerrarSesion{
+    margin-right: 8px;
+}
+
+#textoCerrarSesion{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    font-stretch: ultra-expanded;
+    color: rgb(255, 64, 0);
+}
+
+/*FIN: Zona Privada Usuario: Cerrar sesión*/
+
+
+/*COMIENZO: Zona Privada Usuario: Nueva receta*/
+
+#mainUsuario{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#crearReceta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.crearRecetaInputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 25%;
+}
+
+.crearRecetaInputs input{
+    border: 1px solid rgb(80,80,80);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    height: 22px;
+}
+
+.crearRecetaInputs select{
+    border: 1px solid rgb(80,80,80);
+    margin-bottom: 11px;
+    padding-left: 6px;
+    height: 26px;
+}
+
+/*FIN: Zona Privada Usuario: Nueva receta*/
+
+
+
+/*COMIENZO: Zona Privada Usuario: Editar receta*/
+
+#mainUsuarioEditarReceta{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#editarReceta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+/*FIN: Zona Privada Usuario: Editar receta*/
+
+
+
+/*COMIENZO: Buscador*/
+
+#parrafoBuscador{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(80,80,80);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.lineaSeparacion{
+    border-left: 1px dotted rgb(88, 34, 0);
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#buscarReceta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*FIN: Buscador*/
+
+
+
+/*COMIENZO: Footer */
+
+#footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(88, 34, 0);
+    height: 60px;
+}
+
+#footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(41, 16, 0);
+    height: 40px;
+    padding-right: 30px;
+}
+
+#parrafoPie{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+
+
+#menuPie{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+#menuPie a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.footerMenuSeleccionado{
+    text-decoration: overline;
+    text-decoration-color:white;
+}
+
+.iconosRedesSociales{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*FIN: Footer */
