@@ -1,38 +1,540 @@
-.App {
-  text-align: center;
+/*HOME > CABECERA*/
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    background-color: purple;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menuHomeCabecera{
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/*BARRA SUPERIOR*/
+.usuarioBarraSuperior{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: center;
+    background-color:#66615B;
+    max-height: 40px;
+    border-bottom: 2px solid rgb(230, 230, 230);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .usuarioBarraSuperior_h6{
+    padding-top: 4px;
+    color: white;
+    text-align: right;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0;
+} */
+
+
+/* */
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
 }
 
-.App-link {
-  color: #61dafb;
+
+.subtitulosH3{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    color: #51cbce;
+    margin-top: 20px;
+    align-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitulosH3_2{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    color: #66615B;
+    margin-top: 20px;
+    align-content: center;
 }
+
+.home_bg{
+    background-image: url("./background_home.jpg");
+    background-size: cover;
+    background-color: #B2AFAB;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.logotipoModal{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* .lineaSeparacion{
+    border-left: 1px dotted rgb(88, 34, 0);
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+} */
+
+
+
+
+/* HALL OF FAME > BOTÓN COMPARTIR (REDES SOCIALES)*/
+.btn-circle {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
+}
+  
+.btn-circle i {
+    position: relative;
+    top: -1px;
+}
+  
+.btn-circle-sm {
+    width: 35px;
+    height: 35px;
+    line-height: 36px;
+    font-size: 0.9rem;
+}
+
+.compartirRS_HallOfFame{
+    display: flex;
+    flex-direction:row ;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+   
+}
+
+.compartirRS_HallOfFame p{
+    line-height: 40px;
+}
+
+.compartirRS_HallOfFame_RS{
+    align-content: flex-end;
+}
+
+
+
+
+
+/* HALL OF FAME > MOSTRAR EL HALL OF FAME (ENTERO)*/
+.mostrarInsignias_HallofFame{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;    
+    /* margin-bottom: 40px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border: 1px solid #FF4C40;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom: none; */
+}
+
+.mostrarInsignias_HallofFamePublic{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;    
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.bg_HallofFame{
+    background-image: url("./background_gris.jpg");
+    background-size: cover;
+}
+
+.bg_HallofFamePublic{
+    background-image: url("./background_gris.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.titulo_h1_HallOfFame{
+    margin-top:0;
+    padding-top: 60px;
+}
+
+.titulo_linea_HallofFame{
+    border-top: 1px solid rgb(226, 226, 226);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.titulo_iconoEstrella_HallOfFame{
+    padding-right: 50px;
+    /* color: goldenrod; */
+}
+
+.titulo_iconoEstrella2_HallOfFame{
+    padding-right: 30px;
+    font-size: 30px;
+    /* color: goldenrod; */
+}
+
+.titulo_iconoEstrella3_HallOfFame{
+    padding-left: 25px;
+    font-size: 30px;
+    padding-right: 24px;
+    /* color: goldenrod; */
+}
+
+.titulo_iconoEstrella4_HallOfFame{
+    padding-right: 30px;
+    /* color: goldenrod; */
+}
+
+.blockquoteHallOfFame {
+    border-left: 0 none;
+    border-bottom: 1px solid #CCC5B9;
+    border-top: 1px solid #CCC5B9;
+    font-weight: 300;
+    margin: 4px 0 4px;
+    text-align: center; 
+}
+
+.blockquoteHallOfFame h6{
+    text-align: center; 
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.btnnumeroInsignias_HallOfFame{
+    display: flex;  
+    display: column;      
+    justify-content: center;
+    position: absolute; 
+    left: 20px; 
+    top: 30px;
+    width: 20%;
+    height: 20%;
+}
+
+.numeroInsignia_HallOfFame{
+    color: white;
+    justify-content: center;
+
+}
+
+.numeroInsignia_HallOfFame h6{
+    font-size: 16px;
+    margin: 0;
+}
+
+
+
+/*HALL OF FAME > MOSTRAR CONTACTOS*/
+
+.mostrarContactos_HOF{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 40px;
+}
+
+
+/*INSIGNIAS > BOTÓN*/
+.btnNumeroInsignia{
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.btnNumeroInsignia h6{
+    margin-bottom: 0;
+}
+
+.nombreInsigniaYBtnCentrar{
+    display: flex;  
+    display: column;      
+    justify-content: center;
+}
+
+.mostrarInsignias{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+
+/*INSIGNIAS ASIGNADAS > BOTÓN "INSIGNIAS RESTANTES" Y "A QUIEN/ES" */
+.btnInsigniaRestantes{
+    color: white;
+    justify-content: center;
+}
+
+.btnNumeroInsignia h6{
+    margin: 0;
+}
+
+.blockquote_InsigniasAsignadas{
+    color:#51cbce;
+    font-size: 16px;
+    margin: 0;
+}
+
+.blockquote_InsigniasAsignadas_Ninguna{
+    color:#66615b;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+
+
+/*CONTACTOS*/
+.contactos{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mostrarContactos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 40px;
+}
+
+.mostrarContactosIndiv{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.mostrarContactosIndiv hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactosBuscar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+
+.contactosBuscarInputs{
+    padding-right:10px;
+}
+
+.mostrarNombre_contacto{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.mostrarEdad_contacto{
+    font-size: 12px;
+}
+
+.botonBuscar_contacto{
+    text-align: right;
+    margin-right:70px;
+}
+
+
+
+/*CONTACTOS > DETALLE CONTACTO*/
+.mostrarContactoDetalle{
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mostrarContactoDetalle hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btnEliminarContacto_contactoDetalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.mostrarContactosInsigniasAsignadas{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 10px;
+    border: 1px solid #51cbce;
+    border-radius: 1%;
+}
+
+
+/*SOLICITUDES > NAV TAB*/
+.navTab_Solicitudes{
+    margin: 40px;
+}
+
+.mostrarSolicitudes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+
+
+/*FOOTER*/
+footer{
+    /* background-color:black; */
+    /* color: white; */
+    background-image: url("./footer.jpg"); 
+    background-size:100% 100%;    
+    height: 100%; 
+    width:100%;
+}
+
+
+/*POP UP > Botón (del ejemplo del video)*/
+.principal{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+
+.secundario{
+    margin: 0 auto;
+}
+
+
+@media(max-width: 610px){
+    .contactosBuscar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 20px;
+    }
+
+    .contactosBuscarInputs{
+        padding-bottom:10px;
+        padding-right: 0;
+    }
+
+    .contactosBuscarBoton{
+        text-align: right;
+    } 
+}
+
+
+@media(max-width: 575px){
+    .btnnumeroInsignias_HallOfFame{
+        display: flex;  
+        display: column;      
+        justify-content: center;
+        position: absolute; 
+        left: 30px; 
+        top: 40px;
+        width: 20%;
+        height: 20%;
+    }
+    
+    .numeroInsignia_HallOfFame{
+        color: white;
+        justify-content: center;
+    
+    }
+    
+    .numeroInsignia_HallOfFame h6{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .blockquoteHallOfFame h6{
+        text-align: center; 
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .mostrarContactos_HOF{
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .botonBuscar_contacto{
+        text-align: center;
+        margin-right:0px;
+        margin-bottom:40px;
+        margin-top:30px;
+    }
+
+    .mostrarContactos{
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .mostrarContactosIndiv{
+        justify-content: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .contactosBuscar p{
+        text-align: center;
+    }
+
+    .navTab_Solicitudes{
+        justify-content: center;
+        margin: 40px;
+    }
+
+
+    footer{
+        /* background-color:black; */
+        /* color: white; */
+        background-image: url("./footer.jpg"); 
+        background-size:cover;
+        background-size:100% 100%;
+        height: 100%; 
+        width:100%;
+    }
+}
+
